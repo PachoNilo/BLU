@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/hover.css" />
+    <title>Blu Realty & Investments - Home</title>
+    <meta name="description" content="Home Page of Blu Realty & Investments" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="generalGrid">
+      <!-- HEADER -->
+      <header class="header glassEffect" id="Top">
+        <a href="#Top" class="header__logo--link">
+          <div class="header__logo" id="HeaderLogo" style="width: 120px">
+            <img
+              draggable="false"
+              src="assets/img/icon/Logos/Blu.svg"
+              alt="Blu Realty & Investments"
+              class="header__logo-img"
+            />
+          </div>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-ul">
+            <li class="header__nav-li">
+              <a href="#" class="header__link hvr-underline-from-center"
+                >Book a Call</a
+              >
+            </li>
+            <li class="header__nav-li">
+              <a href="#" class="header__link hvr-underline-from-center"
+                >Buying</a
+              >
+            </li>
+            <li class="header__nav-li">
+              <a href="#" class="header__link hvr-underline-from-center"
+                >Selling</a
+              >
+            </li>
+            <li class="header__nav-li">
+              <a href="#" class="header__link hvr-underline-from-center"
+                >Management</a
+              >
+            </li>
+            <li class="header__nav-li">
+              <a href="#" class="header__link hvr-underline-from-center"
+                >Market Report</a
+              >
+            </li>
+            <li
+              class="header__nav-li hvr-underline-from-center"
+              style="height: 3.22rem"
+            >
+              <a href="#" class="header__link header__link--LogIn"
+                ><img
+                  draggable="false"
+                  src="assets/img/icon/user.svg"
+                  alt="User Icon"
+                  class="userIcon"
+                />
+                Log In</a
+              >
+            </li>
+            <li class="header__nav-li" id="searchLi">
+              <a
+                href="#"
+                id="searchButton"
+                class="header__link hvr-underline-from-center"
+                style="padding-bottom: 1rem; margin-top: 1rem"
+              >
+                <div class="header__link--Search">
+                  <img
+                    draggable="false"
+                    src="assets/img/icon/Search.svg"
+                    alt="Search"
+                    class="header__link--SearchImg"
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div id="searchBar" class="header__searchBar">
+            <input type="text" placeholder="MLS" />
+            <img
+              draggable="false"
+              src="assets/img/icon/searchBarIcon.svg"
+              alt="Search"
+              id="searchBarIcon"
+              class="header__searchBarIcon"
+            />
+          </div>
+        </nav>
+      </header>
+      <!-- HERO -->
+      <main class="main">
+        <section class="main__hero">
+          <div class="hero__overlayVideo"></div>
+          <video
+            muted
+            autoplay
+            loop
+            playsinline
+            poster="assets/img/bgPoster.jpeg"
+            alt="Video of Sunny Isles"
+            class="video"
+          >
+            <source
+              src="assets/video/videoHero.mp4"
+              type="video/mp4"
+              alt="Video of Sunny Isles"
+            />
+          </video>
+          <form
+            action="submit_form.php"
+            class="formMlsSearcher hero__content hero__mlsSearcher"
+            method="post"
+          >
+            <input
+              type="text"
+              class="input__mlsSearcher"
+              placeholder="Sales, Lease, Commercial"
+            />
+            <input type="submit" value="Search" class="bttn_mlsSearcher" />
+          </form>
+          <div class="hero__signature preventSelect">
+            <p>Blu Realty & Investments</p>
+          </div>
+        </section>
+        <!-- SERVICES -->
+        <section class="main__services">
+          <div class="main__service main__serviceSelling" id="openSelling">
+            <div class="main__serviceSelling--Overlay"></div>
+            <div class="mainService__icon">
+              <img src="assets/img/icon/Selling.svg" draggable="false" />
+            </div>
+            <h3 class="mainService__title">Selling</h3>
+            <p class="mainService__text">
+              Utilization of the latest digital trends as well as traditional
+              marketing is key to attracting buyers. <br />
+              Volume buyers = Top-Dollar closings.
+            </p>
+          </div>
+          <div
+            class="main__service main__serviceAcquisitions"
+            id="openAcquisitions"
+          >
+            <div class="main__serviceAcquisitions--Overlay"></div>
+            <div class="mainService__icon">
+              <img
+                src="assets/img/icon/Acquisitions.svg"
+                alt="Acquisitions"
+                draggable="false"
+              />
+            </div>
+            <h3 class="mainService__title">Acquisitions</h3>
+            <p class="mainService__text">
+              Specializing in Miami, the Blu buying experience is simple. Grow
+              your portfolio without management worries. <br />
+              Life is sweeter when stress is minimal!
+            </p>
+          </div>
+          <!-- SELLING POP UP -->
+          <div class="sellingServicesPopUp displayNone">
+            <div class="sellingServicesContent">
+              <div class="sellingServices__top">
+                <div>
+                  <a
+                    href="#sellingServicesBack"
+                    class="sellingServicesBack"
+                    id="sellingServicesBack"
+                    ><img
+                      src="assets/img/icon/Back.svg"
+                      alt="Back"
+                      draggable="false"
+                    />
+                    <span class="iconBack">Back</span></a
+                  >
+                </div>
+                <h3 class="sellingServicesPopUp__title">Selling Services</h3>
+                <p class="sellingServicesPopUp__text">
+                  Skilled negotiators. Proven marketing strategies: exposure in
+                  100+ real estate websites, social media & direct mail generate
+                  a frenzy of active buyers and deliver Top Dollar results
+                </p>
+              </div>
+              <div class="sellingServices__medium">
+                <img
+                  src="assets/img/icon/backv2.svg"
+                  alt="x"
+                  draggable="false"
+                />
+              </div>
+              <form action="#" class="sellingServicesForm" method="post">
+                <div class="sellingServices__topInputs">
+                  <input
+                    type="text"
+                    name="sellingServicesName"
+                    id="sellingServicesName"
+                    placeholder="Name"
+                  />
+                  <input
+                    type="email"
+                    name="sellingServicesEmail"
+                    id="sellingServicesEmail"
+                    placeholder="E-mail"
+                  />
+                  <input
+                    type="tel"
+                    name="sellingServicesPhone"
+                    id="sellingServicesPhone"
+                    placeholder="Phone"
+                  />
+                </div>
+                <input
+                  type="text"
+                  name="sellingServicesAddress"
+                  id="sellingServicesAddress"
+                  placeholder="Complete Address, Zip Code"
+                  style="width: 100%"
+                />
+                <p class="sellingServicesText">
+                  Are there any additions or remodels that add value.
+                </p>
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="sellingServicesSubmit"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="AcquisitionsPopUp displayNone">
+            <div class="AcquisitionsContent">
+              <div class="Acquisitions__top">
+                <div>
+                  <a
+                    href="#AcquisitionsBack"
+                    class="AcquisitionsBack"
+                    id="AcquisitionsBack"
+                    ><img
+                      src="assets/img/icon/Back.svg"
+                      alt="Back"
+                      draggable="false"
+                    />
+                    <span class="iconBack">Back</span></a
+                  >
+                </div>
+                <h3 class="AcquisitionsPopUp__title">Our Clients Enjoy</h3>
+              </div>
+              <div class="AcquisitionsCircleIcons">
+                <div class="AcquisitionsCircleIconsColumnOne">
+                  <div class="AcquisitionsIcon">
+                    <div class="AcquisitionsCircleIcon">
+                      <div class="AcquisitionsCircleIconContainer">
+                        <img
+                          src="assets/img/icon/AcquisitionsIcon1.svg"
+                          alt="Market and ROI Analysis"
+                          class="AcquisitionsIconImg1"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                    <p>Market and ROI Analysis</p>
+                  </div>
+                  <div class="AcquisitionsIcon">
+                    <div class="AcquisitionsCircleIcon">
+                      <div class="AcquisitionsCircleIconContainer">
+                        <img
+                          src="assets/img/icon/AcquisitionsIcon2.svg"
+                          alt="Geographical, Demographical & Censual Reports"
+                          class="AcquisitionsIconImg2"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                    <p>Geographical, Demographical & Censual Reports</p>
+                  </div>
+                  <div class="AcquisitionsIcon">
+                    <div class="AcquisitionsCircleIcon">
+                      <div class="AcquisitionsCircleIconContainer">
+                        <img
+                          src="assets/img/icon/AcquisitionsIcon3.svg"
+                          alt="Foreclosure Acquisitions"
+                          class="AcquisitionsIconImg3"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                    <p>Foreclosure Acquisitions</p>
+                  </div>
+                </div>
+                <div class="AcquisitionsCircleIconsColumnTwo">
+                  <div class="AcquisitionsIcon">
+                    <div class="AcquisitionsCircleIcon">
+                      <div class="AcquisitionsCircleIconContainer">
+                        <img
+                          src="assets/img/icon/AcquisitionsIcon4.svg"
+                          alt="Asset Preservation"
+                          class="AcquisitionsIconImg4"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                    <p>Asset Preservation</p>
+                  </div>
+                  <div class="AcquisitionsIcon">
+                    <div class="AcquisitionsCircleIcon">
+                      <div class="AcquisitionsCircleIconContainer">
+                        <img
+                          src="assets/img/icon/AcquisitionsIcon5.svg"
+                          alt="Clear Budgets & Insightful Reports"
+                          class="AcquisitionsIconImg5"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                    <p>Clear Budgets & Insightful Reports</p>
+                  </div>
+                  <div class="AcquisitionsIcon">
+                    <div class="AcquisitionsCircleIcon">
+                      <div class="AcquisitionsCircleIconContainer">
+                        <img
+                          src="assets/img/icon/AcquisitionsIcon6.svg"
+                          alt="Resident Retention"
+                          class="AcquisitionsIconImg6"
+                          draggable="false"
+                        />
+                      </div>
+                    </div>
+                    <p>Resident Retention</p>
+                  </div>
+                </div>
+              </div>
+              <div class="AcquisitionsImg">
+                <div class="AcquisitionsIcon">
+                  <div class="AcquisitionsCircleIcon">
+                    <div class="AcquisitionsCircleIconContainer">
+                      <img
+                        src="assets/img/icon/AcquisitionsIcon7.svg"
+                        alt="Local Insurers & Tax Attorneys"
+                        class="AcquisitionsIconImg7"
+                        draggable="false"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="Acquisitions__info">
+                  <h3>Local Insurers & Tax Attorneys</h3>
+                  <ul>
+                    <li>Liability</li>
+                    <li>Ordinance Compliance & Lien Reduction</li>
+                    <li>Domestic and Foreign Businesses Formations</li>
+                    <li>Trusts & Estate Planning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <form action="#" class="AcquisitionsForm" method="post">
+              <p class="AcquisitionsPopUp__text">
+                By focusing on the detailed needs of real estate investment, we
+                cultivate long-term & mutually successful relationships.
+              </p>
+              <div class="Acquisitions__topInputs">
+                <input
+                  type="text"
+                  name="AcquisitionsName"
+                  id="AcquisitionsName"
+                  placeholder="Name"
+                />
+                <input
+                  type="email"
+                  name="AcquisitionsEmail"
+                  id="AcquisitionsEmail"
+                  placeholder="E-mail"
+                />
+                <input
+                  type="tel"
+                  name="AcquisitionsPhone"
+                  id="AcquisitionsPhone"
+                  placeholder="Phone"
+                />
+              </div>
+              <input
+                type="text"
+                name="AcquisitionsAddress"
+                id="AcquisitionsAddress"
+                placeholder="+Complete Address, Zip Code"
+                style="width: 100%"
+              />
+              <p class="AcquisitionsText">Specific interest or requirements</p>
+              <p class="AcquisitionsPopUp__text">
+                Because our clients experience undivided loyalty and priority,
+                we serve those who we have a signed exclusive representation
+                agreement.
+              </p>
+              <input type="submit" value="Submit" class="AcquisitionsSubmit" />
+            </form>
+          </div>
+        </section>
+        <section class="coreServices">
+          <h2
+            style="grid-area: coreService__title"
+            class="sectionCoreService__title"
+          >
+            Intelligent Real Estate Management
+          </h2>
+          <div class="displayFlex">
+            <div
+              class="coreService"
+              style="grid-area: coreService1"
+              id="maintenanceOpenPop"
+            >
+              <div class="coreService__icon preventSelect">
+                <img
+                  src="assets/img/icon/Core1.svg"
+                  alt="Maintenance"
+                  draggable="false"
+                />
+              </div>
+              <p class="coreService__title" id="coreServiceTitle">
+                Maintenance
+              </p>
+            </div>
+            <div
+              class="coreService"
+              style="grid-area: coreService2"
+              id="ePaymentOpenPop"
+            >
+              <div class="coreService__icon">
+                <img
+                  src="assets/img/icon/Core2.svg"
+                  alt="E-Payment"
+                  draggable="false"
+                />
+              </div>
+              <p class="coreService__title" id="coreServiceTitle">E-Payment</p>
+            </div>
+            <div
+              class="coreService"
+              style="grid-area: coreService3"
+              id="ScreeningOpenPop"
+            >
+              <div class="coreService__icon">
+                <img
+                  src="assets/img/icon/Core3.svg"
+                  alt="Screening"
+                  draggable="false"
+                />
+              </div>
+              <p class="coreService__title" id="coreServiceTitle">Screening</p>
+            </div>
+            <div class="coreService" style="grid-area: coreService4">
+              <div class="coreService__icon">
+                <img
+                  src="assets/img/icon/Core4.svg"
+                  alt="Evictions"
+                  draggable="false"
+                />
+              </div>
+              <p class="coreService__title" id="coreServiceTitle">Evictions</p>
+            </div>
+            <div
+              class="coreService"
+              style="grid-area: coreService5"
+              id="freeValuationOpenPop"
+            >
+              <div class="coreService__icon">
+                <img
+                  src="assets/img/icon/Core5.svg"
+                  alt="Free Valuation"
+                  draggable="false"
+                />
+              </div>
+              <p class="coreService__title" id="coreServiceTitle">
+                Free Valuation
+              </p>
+            </div>
+          </div>
+          <!-- MAINTENANCE POPUP -->
+          <div class="maintenancePopUp displayNone homePopUp">
+            <div class="maintenancePopContent">
+              <div class="maintenancePopTop">
+                <div class="maintenancePopTopLeft">
+                  <div class="starsIcons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="160px"
+                      height="auto"
+                      viewBox="0 0 177.473 38.31"
+                    >
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect
+                            id="Rectángulo_4821"
+                            data-name="Rectángulo 4821"
+                            width="177.473"
+                            height="38.31"
+                            fill="#003b5c"
+                          />
+                        </clipPath>
+                      </defs>
+                      <g
+                        id="Grupo_9961"
+                        data-name="Grupo 9961"
+                        transform="translate(0 0)"
+                      >
+                        <g
+                          id="Grupo_9960"
+                          data-name="Grupo 9960"
+                          transform="translate(0 0)"
+                          clip-path="url(#clip-path)"
+                        >
+                          <path
+                            id="Trazado_6325"
+                            data-name="Trazado 6325"
+                            d="M87.176,37.679c-3.262-2.464-6.573-4.866-9.758-7.425a2.087,2.087,0,0,0-3.151,0c-3.185,2.559-6.5,4.961-10.508,7.991,1.363-4.58,2.251-8.415,3.673-12.04.927-2.364.2-3.541-1.609-4.823a58.666,58.666,0,0,1-8.716-7.414c3.488,0,7-.241,10.457.073,3,.273,4.105-.944,4.757-3.671A49.25,49.25,0,0,1,76.17,0c1.146,3.757,2.357,7.495,3.413,11.278.539,1.932,1.4,2.876,3.619,2.751a51.993,51.993,0,0,1,11.532.6c-2.951,2.261-5.849,4.6-8.874,6.755-1.805,1.289-2.533,2.468-1.6,4.825,1.415,3.581,2.3,7.371,3.414,11.071l-.5.4"
+                            transform="translate(13.209 0)"
+                            fill="#003b5c"
+                          />
+                          <path
+                            id="Trazado_6326"
+                            data-name="Trazado 6326"
+                            d="M5.774,37.464c1.209-4.01,2.051-7.336,3.236-10.535.7-1.884.238-2.907-1.306-3.989a52.68,52.68,0,0,1-7.7-6.5c3.242,0,6.489-.115,9.722.043,1.952.095,2.841-.577,3.325-2.469.83-3.247,1.927-6.426,3.174-10.486,1.175,3.694,2.337,6.613,3,9.644.587,2.688,1.851,3.573,4.552,3.327a31.174,31.174,0,0,1,8.8.525c-2.788,2.15-5.525,4.369-8.386,6.418a2.16,2.16,0,0,0-.874,2.887,72.816,72.816,0,0,1,2.806,10.648c-2.568-1.943-5.261-3.747-7.662-5.878-1.71-1.517-2.866-1.3-4.473.078-2.415,2.062-5.036,3.884-8.207,6.291"
+                            transform="translate(0 0.815)"
+                            fill="#003b5c"
+                          />
+                          <path
+                            id="Trazado_6327"
+                            data-name="Trazado 6327"
+                            d="M143.72,36.809c-2.747-2.085-5.538-4.113-8.22-6.277-1.155-.933-1.938-1.052-3.166-.032-2.652,2.2-5.476,4.2-8.916,6.8,1.224-4.052,2.092-7.408,3.277-10.647.635-1.737.329-2.688-1.162-3.726a49.14,49.14,0,0,1-7.784-6.643c3.244,0,6.5-.131,9.732.049,1.888.106,2.683-.622,3.156-2.322a59.762,59.762,0,0,1,3.53-9.812c1,3.226,2.114,6.421,2.944,9.69.488,1.925,1.433,2.523,3.35,2.436a46.73,46.73,0,0,1,9.777.512c-2.6,2-5.13,4.09-7.813,5.967-1.57,1.1-1.957,2.142-1.268,4,1.162,3.132,2,6.387,2.969,9.589l-.405.417"
+                            transform="translate(27.235 0.971)"
+                            fill="#003b5c"
+                          />
+                          <path
+                            id="Trazado_6328"
+                            data-name="Trazado 6328"
+                            d="M44.3,4.328c1.043,3.342,2.171,6.66,3.091,10.035a2.2,2.2,0,0,0,2.589,1.917,54.8,54.8,0,0,1,10.338.544c-2.671,2.054-5.272,4.2-8.038,6.121A2.673,2.673,0,0,0,51.135,26.5c1.111,3.329,2.112,6.695,3.4,10.806-3.413-2.576-6.234-4.564-8.879-6.762-1.3-1.081-2.166-.951-3.389.042-2.61,2.119-5.335,4.1-8.5,6.5a49.117,49.117,0,0,1,2.762-9.445c.938-2.454.552-4.008-1.779-5.447a32.235,32.235,0,0,1-6.887-5.95c3.341,0,6.684-.078,10.019.034a2.319,2.319,0,0,0,2.746-2.061c.882-3.326,2.008-6.586,3.035-9.874l.637-.022"
+                            transform="translate(6.444 1.001)"
+                            fill="#003b5c"
+                          />
+                          <path
+                            id="Trazado_6329"
+                            data-name="Trazado 6329"
+                            d="M115.952,36.755c-2.831-2.126-5.706-4.194-8.465-6.408a1.788,1.788,0,0,0-2.711.03c-2.762,2.209-5.637,4.278-9.118,6.892,1.153-3.792,1.976-6.908,3.063-9.928.751-2.088.649-3.515-1.43-4.843a38.439,38.439,0,0,1-7.327-6.235c3.107,0,6.218-.107,9.318.038,2.048.095,3.2-.321,3.694-2.618a41.022,41.022,0,0,1,3.442-9.4c1.008,3.208,2.171,6.378,2.961,9.639.485,1.992,1.485,2.45,3.336,2.378a47.059,47.059,0,0,1,9.742.531c-2.4,1.852-4.672,3.9-7.227,5.5-2.251,1.412-2.506,2.953-1.635,5.259,1.084,2.878,1.888,5.861,2.812,8.8l-.456.371"
+                            transform="translate(20.809 0.99)"
+                            fill="#003b5c"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="280px"
+                    height="auto"
+                    viewBox="0 0 321 183"
+                  >
+                    <path
+                      class="20Years"
+                      id="20Years"
+                      data-name="20Years"
+                      d="M232,242V205.75l63.25-58.5a65.844,65.844,0,0,0,8.875-10A28.588,28.588,0,0,0,308,129.625a22.472,22.472,0,0,0,1-6.375q0-6.5-4.25-10.125T292,109.5a28.6,28.6,0,0,0-25.75,16.25l-44.5-22.25q9.5-18,28.5-29.25T297.5,63q20.75,0,36.75,6.75t25,19q9,12.25,9,29a69.86,69.86,0,0,1-2.125,17,55.518,55.518,0,0,1-8.625,17.875Q351,162,338.25,173.5l-47.5,43.25-9.25-20.5h90.75V242Zm231.5,4q-23.25,0-41.125-10.75t-28-31.25q-10.125-20.5-10.125-49.5T394.375,105q10.125-20.5,28-31.25T463.5,63q23.25,0,41.125,10.75t28,31.25q10.125,20.5,10.125,49.5T532.625,204q-10.125,20.5-28,31.25T463.5,246Zm0-47.25a15,15,0,0,0,10.25-4q4.5-4,7.125-13.75t2.625-26.5q0-17-2.625-26.625T473.75,114.25a15.133,15.133,0,0,0-20.5,0q-4.5,4-7.125,13.625T443.5,154.5q0,16.75,2.625,26.5t7.125,13.75A15,15,0,0,0,463.5,198.75Z"
+                      transform="translate(-221.75 -63)"
+                      fill="#003b5c"
+                    />
+                  </svg>
+                  <p class="maintenancePopTopLeft__Years">Years</p>
+                </div>
+                <div class="maintenancePopTopRight">
+                  <h3 class="maintenancePopTopRight__Title">
+                    Quality Assurance
+                  </h3>
+                  <p class="maintenancePopTopRight__Text">
+                    With over 20 years experience in Real Estate development,
+                    our expertise expands from <br />
+                    raw-land to the finished product.
+                  </p>
+                </div>
+              </div>
+              <img
+                draggable="false"
+                src="assets/img/maintenanceShape.svg"
+                alt="Two lounge chairs on the beach"
+                class="beachWaves"
+              />
+              <div class="closeMaintenancePopUp" id="closeMaintenancePopUp">
+                <img
+                  draggable="false"
+                  src="assets/img/icon/xBlueLight.svg"
+                  alt="Close Maintenance PopUp"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- EPAYMENT POP UP -->
+          <div class="ePaymentPopUp displayNone">
+            <div class="ePaymentPopContent">
+              <div class="ePaymentPopContentLeft">
+                <h3 class="ePaymentPopUp__title">E-Payment</h3>
+                <p class="ePaymentPopUp__subtitle">
+                  Accounting accuracy with automate solutions.
+                </p>
+                <div class="ePaymentPopUp__icons">
+                  <div class="ePaymentPopUp__info">
+                    <div class="ePaymentPopUp__icon">
+                      <img
+                        src="assets/img/icon/Logos/Venmo.svg"
+                        alt="Venmo"
+                        draggable="false"
+                      />
+                    </div>
+                    <p class="ePaymentPopUp__text">Venmo</p>
+                  </div>
+                  <div class="ePaymentPopUp__info">
+                    <div class="ePaymentPopUp__icon">
+                      <img
+                        src="assets/img/icon/Logos/CashApp.svg"
+                        alt="Cash App"
+                        draggable="false"
+                      />
+                    </div>
+                    <p class="ePaymentPopUp__text">Cash App</p>
+                  </div>
+                  <div class="ePaymentPopUp__info">
+                    <div class="ePaymentPopUp__icon">
+                      <img
+                        src="assets/img/icon/Logos/Zelle.svg"
+                        alt="Zelle"
+                        draggable="false"
+                      />
+                    </div>
+                    <p class="ePaymentPopUp__text">Zelle</p>
+                  </div>
+                  <div class="ePaymentPopUp__info">
+                    <div class="ePaymentPopUp__icon">
+                      <img
+                        src="assets/img/icon/Logos/WesternUnion.svg"
+                        alt="Western Union"
+                        draggable="false"
+                      />
+                    </div>
+                    <p class="ePaymentPopUp__text">Western Union</p>
+                  </div>
+                  <div class="ePaymentPopUp__info">
+                    <div class="ePaymentPopUp__icon">
+                      <img
+                        src="assets/img/icon/CreditCard.svg"
+                        alt="Credit Card"
+                        draggable="false"
+                      />
+                    </div>
+                    <p class="ePaymentPopUp__text">Credit Card</p>
+                  </div>
+                  <div class="ePaymentPopUp__info">
+                    <div class="ePaymentPopUp__icon">
+                      <img
+                        src="assets/img/icon/Bank.svg"
+                        alt="Bank"
+                        draggable="false"
+                      />
+                    </div>
+                    <p class="ePaymentPopUp__text">Bank</p>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="assets/img/ePaymentShape.svg"
+                alt="Two people sitting in lounge chairs on the beach"
+                class="ePaymentPopUp__img"
+                draggable="false"
+              />
+              <div class="closeEPaymentPopUp" id="closeEPaymentPopUp">
+                <img
+                  src="assets/img/icon/xGray.svg"
+                  alt="Close E-Payment PopUp"
+                  draggable="false"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- SCREENING POPUP -->
+          <div class="screeningPopUp displayNone">
+            <div class="screeningPopContent">
+              <div class="screeningPopContentLeft">
+                <h3 class="screeningPopUp__title">Screening</h3>
+                <p class="screeningPopUp__text">
+                  We use major U.S. reporting agencies and leading national
+                  database screening solutions to verify: income, credit, rental
+                  and in-depth criminal/sex offender background history.
+                </p>
+              </div>
+              <img
+                src="assets/img/screeningShape.svg"
+                alt="Two people sitting in lounge chairs on the beach"
+                class="screeningPopUp__img"
+                draggable="false"
+              />
+              <div class="closeScreeningPopUp" id="closeScreeningPopUp">
+                <img
+                  src="assets/img/icon/xBlueLight.svg"
+                  alt="Close Screening PopUp"
+                  draggable="false"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- FREE VALUATION POPUP -->
+          <div class="freeValuationPopUp displayNone">
+            <div class="freeValuationContent">
+              <form action="#" class="freeValuationForm" method="post">
+                <h3 class="freeValuationTitle">
+                  How much is my Property Worth?
+                </h3>
+                <p class="freeValuationSubtitle">
+                  Complete to receive your free valuation report
+                </p>
+                <div class="freeValuation__topInputs">
+                  <input type="text" name="" id="" placeholder="Name" />
+                  <input type="email" name="" id="" placeholder="E-mail" />
+                  <input type="tel" name="" id="" placeholder="Phone" />
+                </div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Complete Address, Zip Code"
+                  style="width: 100%"
+                />
+                <p class="freeValuationText">
+                  Are there any additions or remodels that add value.
+                </p>
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="freeValuationSubmit"
+                />
+              </form>
+              <div class="closefreeValuationPopUp" id="closefreeValuationPopUp">
+                <img
+                  src="assets/img/icon/xBlueLight.svg"
+                  alt="Close Free Valuation PopUp"
+                  draggable="false"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="starContact">
+          <h2 class="starContact__title">Get in touch with us</h2>
+          <form action="#" class="starForm" method="post">
+            <div class="starFormInputs">
+              <input type="text" placeholder="Name" id="nameInput" />
+              <input type="email" placeholder="E-mail" id="emailInput" />
+              <input
+                type="tel"
+                placeholder="Phone"
+                class="starForm_phoneInput"
+                id="phoneInput"
+              />
+            </div>
+            <div class="starForm__Checkboxes">
+              <p class="starForm__text">Are you looking to:</p>
+              <div class="starForm__Checkbox">
+                <p class="starForm__CheckboxText">Buy</p>
+                <input
+                  type="checkbox"
+                  id="roundedCheckboxB"
+                  class="starForm__CheckboxInput"
+                  name="Buy"
+                />
+                <label for="roundedCheckboxB"></label>
+              </div>
+              <div class="starForm__Checkbox">
+                <p class="starForm__CheckboxText">Sell</p>
+                <input
+                  type="checkbox"
+                  id="roundedCheckboxS"
+                  class="starForm__CheckboxInput"
+                  name="Sell"
+                />
+                <label for="roundedCheckboxS"></label>
+              </div>
+              <div class="starForm__Checkbox">
+                <p class="starForm__CheckboxText">Management</p>
+                <input
+                  type="checkbox"
+                  id="roundedCheckboxM"
+                  class="starForm__CheckboxInput"
+                  name="Management"
+                />
+                <label for="roundedCheckboxM"></label>
+              </div>
+            </div>
+            <input type="submit" value="Submit" class="starForm_Bttn" />
+          </form>
+        </section>
+        <!-- ABOUT US SECTION -->
+        <section class="AboutUs__section">
+          <div class="AboutUs--Left">
+            <h2 class="AboutUs__title">About US</h2>
+            <p class="AboutUs__text">
+              Through 20+ years of experience, we understood that the marriage
+              between brokerage and maintenance is a “happily ever after” for
+              real estate investment.
+            </p>
+            <p class="AboutUs__text">
+              We help our clients achieve their goals through reliable asset
+              management and reporting. We achieve our goals with honesty,
+              fairness and long-term partnerships.
+            </p>
+            <p class="AboutUs__text">
+              Maintenance services are exclusive to properties we list or
+              management.
+            </p>
+          </div>
+          <div class="AboutUs--Right">
+            <form action="#" class="AboutUs__Form" method="post">
+              <p class="AboutUs__FormTitle">Let's Grow Together</p>
+              <div class="AboutUs__Form--Inputs">
+                <label for="AboutUsName" class="AboutUs__Label">Name</label>
+                <input type="text" placeholder="John Doe" id="AboutUsName" />
+                <label for="AboutUsEmail" class="AboutUs__Label">E-mail</label>
+                <input
+                  type="email"
+                  placeholder="johndoe@mail.com"
+                  id="AboutUsEmail"
+                />
+                <label for="AboutUsPhone" class="AboutUs__Label">Phone</label>
+                <input type="tel" placeholder="+1" id="AboutUsPhone" />
+                <input type="submit" value="Submit" class="AboutUs__Submit" />
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- QUOTES -->
+        <div class="scroll-left">
+          <div class="scroll-content" id="scroll-container">
+            <div class="main__quote">
+              <p class="quoteExample" id="quote1"></p>
+              <p class="quoteExample" id="quote2" style="margin: 0 8rem"></p>
+            </div>
+          </div>
+          <p class="nameExample" id="author">-</p>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <!-- RIGHT WAVES -->
+        <div class="footer__linesRight"></div>
+        <!-- TOP WAVES -->
+        <div class="footer__waves"></div>
+        <div class="footer__container">
+          <div class="footer__header">
+            <div class="footer_lineLeft"></div>
+            <div class="smarterDecisionsPopUp displayNone">
+              <div class="smarterDecisionsWarning">
+                <img
+                  src="assets/img/icon/Warning.svg"
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+              <button class="closeSmarter" id="closeSmarterPopUp">
+                <img
+                  src="assets/img/icon/xBlueLight.svg"
+                  alt="Close Smarter Decisions PopUp"
+                  draggable="false"
+                />
+              </button>
+              <div class="smarterDecisionsPopUpContent">
+                <form action="#" class="smarterDecisionsForm" method="post">
+                  <h3 class="smarterDecisionsTitle">Make Smarter Decisions!</h3>
+                  <h2 class="smarterDecisionsSubtitle">Sign up!</h2>
+                  <h4>receive in-depth reports with detailed:</h4>
+                  <p>
+                    Our insights empower you to identify high-potential
+                    properties and maximize your returns.
+                  </p>
+                  <div class="smarterDecisionsCheckboxs">
+                    <input
+                      type="checkbox"
+                      name="smartCheckbox1"
+                      id="smartCheckbox1"
+                      class="smarterDecisionsCheckbox"
+                    />
+                    <label for="smartCheckbox1">ROI Analysis</label>
+                    <input
+                      type="checkbox"
+                      name="smartCheckbox2"
+                      id="smartCheckbox2"
+                      class="smarterDecisionsCheckbox"
+                    />
+                    <label for="smartCheckbox2">Cap Rate</label>
+                    <input
+                      type="checkbox"
+                      name="smartCheckbox3"
+                      id="smartCheckbox3"
+                      class="smarterDecisionsCheckbox"
+                    />
+                    <label for="smartCheckbox3">Cash-on-Cash Return</label>
+                  </div>
+                  <input
+                    type="email"
+                    name="smarterDecisionsEmail"
+                    id="smarterDecisionsEmail"
+                    placeholder="yourmailadress@here.com"
+                  />
+                  <input
+                    type="submit"
+                    value="Suscribe"
+                    class="smarterDecisionsButton"
+                  />
+                </form>
+              </div>
+            </div>
+            <p class="footer__title">Investor Report</p>
+            <div class="footer_lineRight"></div>
+          </div>
+          <!-- FOOTER PAGES -->
+          <div class="footer__links">
+            <ul>
+              <li>
+                <a href="#" class="footer__link" draggable="false"
+                  >Market Report</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link" draggable="false">Concierge</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link" draggable="false">Storm</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__link footer__link--bold"
+                  draggable="false"
+                  >Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__link footer__link--bold"
+                  draggable="false"
+                  >Buying</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer__link footer__link--bold"
+                  draggable="false"
+                  >Selling</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer__link" draggable="false">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link" draggable="false">BluWorld</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link" draggable="false"
+                  >Miami Marine Lifestyle</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- CONTACT LINKS -->
+          <div class="footer__contact-links">
+            <a href="#" class="footer__contact-link" draggable="false">
+              <div class="footer__contact">
+                <div class="footer__contact-icon">
+                  <img
+                    src="assets/img/icon/Email.svg"
+                    alt="Email Icon"
+                    draggable="false"
+                  />
+                </div>
+                <p>followus@blurealty.ai</p>
+              </div>
+            </a>
+            <a href="#" class="footer__contact-link" draggable="false">
+              <div class="footer__contact">
+                <div class="footer__contact-icon">
+                  <img
+                    src="assets/img/icon/Logos/WhatsApp.svg"
+                    alt="WhatsApp Icon"
+                    draggable="false"
+                  />
+                </div>
+                <div class="footer__contactNumber">
+                  <p>305.800.BLUR</p>
+                  <p style="font-size: 25px">(2587)</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="footer__contact-link" draggable="false">
+              <div class="footer__contact">
+                <div class="footer__contact-icon">
+                  <img
+                    src="assets/img/icon/Call.svg"
+                    alt="Call Icon"
+                    draggable="false"
+                  />
+                </div>
+                <p>Book a Call</p>
+              </div>
+            </a>
+          </div>
+          <!-- SOCIAL ICONS -->
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" draggable="false">
+              <div class="footer__social-link--bluelight">
+                <img
+                  src="assets/img/icon/Logos/Facebook.svg"
+                  alt="Go to Blu's Facebook"
+                  style="width: 55%"
+                  draggable="false"
+                />
+              </div>
+            </a>
+            <a href="#" class="footer__social-link" draggable="false">
+              <div class="footer__social-link--bluelight">
+                <img
+                  src="assets/img/icon/Logos/Linkedin.svg"
+                  alt="Go to Blu's Linkedin"
+                  style="width: 50%"
+                  draggable="false"
+                />
+              </div>
+            </a>
+            <a href="#" class="footer__social-link" draggable="false">
+              <div class="footer__social-link--bluelight">
+                <img
+                  src="assets/img/icon/Logos/Youtube.svg"
+                  alt="Go to Blu's Youtube"
+                  style="width: 60%"
+                  draggable="false"
+                />
+              </div>
+            </a>
+            <a href="#" class="footer__social-link" draggable="false">
+              <div class="footer__social-link--bluelight">
+                <img
+                  src="assets/img/icon/Logos/Instagram.svg"
+                  alt="Go to Blu's Instagram"
+                  style="width: 55%"
+                  draggable="false"
+                />
+              </div>
+            </a>
+            <a href="#" class="footer__social-link" draggable="false">
+              <div class="footer__social-link--bluelight">
+                <img
+                  src="assets/img/icon/Logos/X.svg"
+                  alt="Go to Blu's X"
+                  draggable="false"
+                />
+              </div>
+            </a>
+          </div>
+          <!-- BACK TO TOP ARROW -->
+          <a href="#Top" class="hvr-bob" draggable="false">
+            <div class="footer__arrow hvr-bob">
+              <img
+                src="assets/img/icon/topArrow.svg"
+                alt="Back to top"
+                draggable="false"
+              />
+            </div>
+          </a>
+          <!-- LEFT WAVES -->
+          <div class="footer__linesLeft"></div>
+          <!-- HASHTAGS -->
+          <div class="footer__hashtags">
+            <h3 class="footer__hashtag">#blutranquility #blurealtyai</h3>
+          </div>
+          <!-- BOTTOM INFO -->
+          <div class="footer__footer">
+            <ul>
+              <li><a href="#" draggable="false">Privacy Policy</a></li>
+              <li><a href="#" draggable="false">Terms & Conditions</a></li>
+              <li><p>323 Sunny Isles Boulevard, 7th Floor</p></li>
+              <li><p>Sunny Isles Beach, Florida 33160</p></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- PACHO BOT -->
+    <script defer src="https://salesiq.zohopublic.com/widget"></script>
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
